@@ -1,13 +1,13 @@
-import Logo from "/logo.svg";
-import HamburgerMenu from "/images/icon-hamburger.svg";
+import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar";
 
 const App = () => {
-  return ( <main className="w-full h-auto bg-slate-800">
-    <nav className="w-full h-auto flex p-5 items-center justify-between">
-      <img className="h-6 w-max" src={Logo} alt="Logo" />
-      <img className="h-4 w-max" src={HamburgerMenu} alt="Hamburger Menu" />
-    </nav>
-  </main> );
-}
- 
+  return (
+    <main className="h-auto w-full bg-slate-800">
+      <Navbar />
+      <Hero />
+    </main>
+  );
+};
+
 export default App;
