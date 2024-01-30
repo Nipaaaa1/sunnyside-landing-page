@@ -5,10 +5,11 @@ export default {
     extend: {
       colors: {
         softRed: "hsl(7, 99%, 70%)",
-        Yellow: "hsl(51, 100%, 49%)",
+        yellow: "hsl(51, 100%, 49%)",
         darkDesaturatedCyan: "hsl(167, 40%, 24%)",
         darkBlue: "hsl(198, 62%, 26%)",
         darkModerateCyan: "hsl(168, 34%, 41%)",
+        footerCyan: "hsl(167, 44%, 70%)",
         veryDarkDesaturatedBlue: "hsl(212, 27%, 19%)",
         veryDarkGrayishBlue: "hsl(213, 9%, 39%)",
         grayishBlue: "hsl(210, 4%, 67%)",
@@ -19,6 +20,7 @@ export default {
       },
       letterSpacing: {
         header: "0.5rem",
+        testimonial: "0.25rem",
       },
     },
   },
