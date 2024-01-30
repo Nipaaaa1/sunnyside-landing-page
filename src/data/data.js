@@ -1,13 +1,13 @@
-{
+const data = {
   navigation: [
     { title: "About", href: "/" },
     { title: "Services", href: "/" },
     { title: "Projects", href: "/" },
     { title: "Contact", href: "/" },
-  ];
+  ],
   hero: {
-    title: "We are creatives";
-  }
+    title: "We are creatives",
+  },
   content: [
     {
       title: "Transform your brand",
@@ -25,7 +25,7 @@
       title: "Photography",
       text: "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
     },
-  ];
+  ],
   testimonials: [
     {
       name: "Emily R.",
@@ -45,5 +45,7 @@
       testimonial:
         "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
     },
-  ];
-}
+  ],
+};
+
+export default data;
