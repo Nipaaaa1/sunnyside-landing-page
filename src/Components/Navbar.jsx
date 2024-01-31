@@ -26,7 +26,7 @@ const Navbar = ({ data }) => {
     setMenu(!menu);
   };
   return (
-    <nav className="absolute z-20 flex h-auto w-full items-center justify-between p-5 md:p-8">
+    <nav className="fixed z-20 flex h-auto w-full items-center justify-between p-5 backdrop-blur-xl md:p-8">
       <img className="h-6 w-max" src={Logo} alt="Logo" />
       <ul className="hidden items-center gap-14 font-barlow md:flex">
         {data.map((data) => {
