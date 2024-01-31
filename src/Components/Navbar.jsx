@@ -26,9 +26,29 @@ const Navbar = ({ data }) => {
     setMenu(!menu);
   };
   return (
-    <nav className="absolute z-20 flex h-auto w-full items-center justify-between p-5">
+    <nav className="absolute z-20 flex h-auto w-full items-center justify-between p-5 md:p-8">
       <img className="h-6 w-max" src={Logo} alt="Logo" />
-      <button onClick={handleClick}>
+      <ul className="hidden items-center gap-14 font-barlow md:flex">
+        {data.map((data) => {
+          if (data.id == 3) {
+            return (
+              <li
+                className="rounded-full bg-white px-8 py-4 font-fraunces uppercase text-veryDarkDesaturatedBlue transition ease-in-out hover:bg-white/40 hover:text-white"
+                key={data.id}
+              >
+                <a href="/">{data.title}</a>
+              </li>
+            );
+          } else {
+            return (
+              <li className="text-white" key={data.id}>
+                <a href="/">{data.title}</a>
+              </li>
+            );
+          }
+        })}
+      </ul>
+      <button className="md:hidden" onClick={handleClick}>
         <img className="h-4 w-max" src={HamburgerMenu} alt="Hamburger Menu" />
       </button>
       <AnimatePresence>
@@ -38,7 +58,7 @@ const Navbar = ({ data }) => {
             initial="closed"
             animate="open"
             exit="closed"
-            className="absolute left-5 right-5 top-28 flex h-auto origin-top-right flex-col items-center gap-8 bg-white p-8 font-barlow text-lg text-grayishBlue"
+            className="absolute left-5 right-5 top-28 flex h-auto origin-top-right flex-col items-center gap-8 bg-white p-8 font-barlow text-lg text-grayishBlue md:hidden"
           >
             <svg
               className="absolute -top-3 right-0 -rotate-90 scale-[1.20] fill-white"
