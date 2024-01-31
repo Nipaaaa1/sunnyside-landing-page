@@ -1,9 +1,9 @@
 const data = {
   navigation: [
-    { title: "About", href: "/" },
-    { title: "Services", href: "/" },
-    { title: "Projects", href: "/" },
-    { title: "Contact", href: "/" },
+    { id: 0, title: "About" },
+    { id: 1, title: "Services" },
+    { id: 2, title: "Projects" },
+    { id: 3, title: "Contact" },
   ],
   hero: {
     title: "We are creatives",
